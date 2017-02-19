@@ -6,14 +6,14 @@ Tiny python scrapper using HTMLParser and urllib request for python 3.x.x
 #### How to use the html parser? the html parser implement using HTMLParser class from python and then generate the python etree.
 
 ```python
-html = "<html><head><title></title></head><body><h1>test</h1></body></html>"
+html = "<html><head><title></title></head><body><h1 id="title">test</h1></body></html>"
 parser = HTMLParser()
 root = parser.feed(html)
 parser.close()
 
 # xpath support for etree
 # minimal xpath
-h1 = root.find("body/h1").text
+h1 = root.find("body/h1[@id='title']").text
 print(h1)
 ```
 
