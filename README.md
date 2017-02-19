@@ -35,7 +35,7 @@ print(h1)
 # the example script using asosde website to retrieve sidebar menu and request search result api
 Usage is simple
 
-```python
+```bash
 $python asosde.py
 ```
 
